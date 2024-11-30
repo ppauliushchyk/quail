@@ -1,15 +1,9 @@
-import React, { Suspense } from "react";
+import React from "react";
 
-import Countries, { CountriesSkeleton } from "@/components/Countries";
-import Search, { SearchSkeleton } from "@/components/Search";
+import { CountriesSkeleton } from "@/components/Countries";
+import { SearchSkeleton } from "@/components/Search";
 
-export default async function Page({
-  searchParams,
-}: {
-  searchParams: Promise<{ q: string }>;
-}) {
-  const { q } = await searchParams;
-
+export default function Loading() {
   return (
     <div className="container">
       <div className="row pt-5">
@@ -26,17 +20,13 @@ export default async function Page({
 
       <div className="row sticky-top mb-3">
         <div className="col-12 col-lg-6 mx-auto">
-          <Suspense fallback={<SearchSkeleton />}>
-            <Search />
-          </Suspense>
+          <SearchSkeleton />
         </div>
       </div>
 
       <div className="row mb-3">
         <div className="col-12 col-lg-6 mx-auto">
-          <Suspense fallback={<CountriesSkeleton />}>
-            <Countries q={q} />
-          </Suspense>
+          <CountriesSkeleton />
         </div>
       </div>
     </div>

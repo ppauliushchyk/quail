@@ -6,6 +6,13 @@
 
 // 2. Include any default variable overrides here
 
+$body-bg: #f8f9fa;
+$body-secondary-bg: #ffffff;
+
+$input-bg: #ffffff;
+
+$table-bg: #ffffff;
+
 $enable-shadows: false;
 
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
@@ -75,5 +82,27 @@ $enable-shadows: false;
   }
   100% {
     transform: translateX(100%) scaleX(0.5);
+  }
+}
+
+@supports (animation-timeline: scroll()) {
+  .sticky-top > div > div {
+    animation: scroll-shadow linear both;
+    animation-timeline: scroll();
+    animation-range: 144px 250px;
+    background-color: $body-bg;
+    box-shadow: none;
+  }
+
+  @keyframes scroll-shadow {
+    from {
+      background-color: $body-bg;
+      box-shadow: none;
+    }
+
+    to {
+      background-color: $body-tertiary-bg;
+      box-shadow: $box-shadow-lg;
+    }
   }
 }
