@@ -12,14 +12,14 @@ export default async function Countries({ q }: { q: string }) {
           <thead>
             <tr>
               <th
-                className="fw-normal text-body-tertiary"
+                className="fw-normal text-body-secondary"
                 scope="col"
                 style={{ width: 100 }}
               >
                 Code
               </th>
 
-              <th className="fw-normal text-body-tertiary" scope="col">
+              <th className="fw-normal text-body-secondary" scope="col">
                 Name
               </th>
             </tr>
@@ -73,14 +73,14 @@ export function CountriesSkeleton() {
           <thead>
             <tr>
               <th
-                className="fw-normal text-body-tertiary"
+                className="fw-normal text-body-secondary"
                 scope="col"
                 style={{ width: 100 }}
               >
                 Code
               </th>
 
-              <th className="fw-normal text-body-tertiary" scope="col">
+              <th className="fw-normal text-body-secondary" scope="col">
                 Name
               </th>
             </tr>

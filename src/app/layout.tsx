@@ -5,8 +5,9 @@ import React from "react";
 import "@/styles/index.scss";
 
 export const metadata: Metadata = {
-  description: "",
-  title: "",
+  description:
+    "See a list of countries filtered by code using a GraphQL query.",
+  title: "QUAIL | Countries",
 };
 
 export default function RootLayout({
