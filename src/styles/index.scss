@@ -6,7 +6,7 @@
 
 // 2. Include any default variable overrides here
 
-$enable-shadows: true;
+$enable-shadows: false;
 
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "~bootstrap/scss/variables";
@@ -59,3 +59,21 @@ $enable-shadows: true;
 @import "~bootstrap/scss/utilities/api";
 
 // 8. Add additional custom code here
+
+.indeterminate-progress-bar {
+  animation: indeterminate-progress-bar-animation 1s infinite linear;
+  transform-origin: 0% 50%;
+  width: 100%;
+}
+
+@keyframes indeterminate-progress-bar-animation {
+  0% {
+    transform: translateX(0) scaleX(0);
+  }
+  40% {
+    transform: translateX(0) scaleX(0.4);
+  }
+  100% {
+    transform: translateX(100%) scaleX(0.5);
+  }
+}
