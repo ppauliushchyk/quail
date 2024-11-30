@@ -34,8 +34,8 @@ See a list of countries filtered by code using a GraphQL query.
      npm install --force
      ```
 
-     > [!IMPORTANT]  
-     > If you see a peer dependencies warning, you need to use the --force or --legacy-peer-deps flag to ignore the warning. This won't be necessary once both Next.js 15 and React 19 are stable.
+> [!IMPORTANT]  
+> If you see a peer dependencies warning, you need to use the --force or --legacy-peer-deps flag to ignore the warning. This won't be necessary once both Next.js 15 and React 19 are stable.
 
 ## Development
 
