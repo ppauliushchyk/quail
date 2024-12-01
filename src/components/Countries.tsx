@@ -8,7 +8,7 @@ export default async function Countries({ q }: { q: string }) {
   return (
     <div className="card bg-body-secondary border-0">
       <div className="card-body">
-        <table className="table mb-0">
+        <table className="table">
           <thead>
             <tr>
               <th
@@ -69,7 +69,7 @@ export function CountriesSkeleton() {
   return (
     <div className="card bg-body-secondary border-0">
       <div className="card-body">
-        <table className="table mb-0">
+        <table className="table">
           <thead>
             <tr>
               <th

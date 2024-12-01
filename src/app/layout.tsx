@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import React from "react";
+import React, { ReactNode } from "react";
 
 import "@/styles/index.scss";
 
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html data-bs-theme="light" lang="en">
