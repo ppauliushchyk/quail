@@ -20,7 +20,14 @@ import "./commands";
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
+import { addMatchImageSnapshotCommand } from "@simonsmith/cypress-image-snapshot/command";
 import { mount } from "cypress/react18";
+
+import "../../src/styles/index.scss";
+
+addMatchImageSnapshotCommand({
+  customSnapshotsDir: "cypress/snapshots/components",
+});
 
 // Augment the Cypress namespace to include type definitions for
 // your custom command.
