@@ -22,6 +22,7 @@
     "react-dom": "19.0.0-rc-66855b96-20241106"
   },
   "devDependencies": {
+    "@simonsmith/cypress-image-snapshot": "^9.1.0",
     "@stylistic/eslint-plugin-js": "^2.11.0",
     "@stylistic/eslint-plugin-jsx": "^2.11.0",
     "@stylistic/eslint-plugin-ts": "^2.11.0",
@@ -33,6 +34,7 @@
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-next": "15.0.3",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-cypress": "^4.1.0",
     "sass": "1.71.0",
     "start-server-and-test": "^2.0.8",
     "typescript": "^5"
