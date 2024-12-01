@@ -1,8 +1,5 @@
 import React from "react";
 
-import { CountriesSkeleton } from "@/components/Countries";
-import { SearchSkeleton } from "@/components/Search";
-
 export default function NodFound() {
   return (
     <div className="container">

@@ -18,7 +18,3 @@ import "./commands";
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
-
-import { addMatchImageSnapshotCommand } from "@simonsmith/cypress-image-snapshot/command";
-
-addMatchImageSnapshotCommand({ customSnapshotsDir: "cypress/snapshots/e2e" });
