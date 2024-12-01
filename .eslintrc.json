@@ -4,7 +4,8 @@
     "next/typescript",
     "prettier",
     "airbnb",
-    "airbnb/whitespace"
+    "airbnb/whitespace",
+    "plugin:cypress/recommended"
   ],
   "plugins": ["@stylistic/js", "@stylistic/ts", "@stylistic/jsx"],
   "rules": {
